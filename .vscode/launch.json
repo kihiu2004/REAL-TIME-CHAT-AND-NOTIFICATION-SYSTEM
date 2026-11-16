@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ConnectHub: FastAPI (uvicorn)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "app.main:app",
+                "--reload",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000"
+            ],
+            "cwd": "${workspaceFolder}/ConnectHub",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "ConnectHub: config check",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/ConnectHub/app/config.py",
+            "cwd": "${workspaceFolder}/ConnectHub",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
